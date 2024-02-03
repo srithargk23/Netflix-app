@@ -1,0 +1,31 @@
+.section-title {
+    font-size: larger;
+    padding: 15px 0px 0px 60px;
+    color: white;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: repeat(5, 1fr); */
+    gap: 5px;
+    padding: 15px 50px 0px 50px;
+    /* overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none; */
+}
+
+/* .rows::-webkit-scrollbar {
+	display: none;
+} */
+@media screen and (max-width: 768px) {
+    .rows {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .rows {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
