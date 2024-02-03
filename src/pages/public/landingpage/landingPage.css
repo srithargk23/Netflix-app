@@ -1,0 +1,42 @@
+.main-banner {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.5) 50%),
+        url(./../../../assets/images/main-banner.jpg) center/cover no-repeat;
+    height: 90vh;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    height: 90vh;
+    /* You can adjust the height based on your design */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content-box {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .content-box {
+        flex-direction: column;
+        padding-bottom: 90px;
+    }
+
+    .main-title {
+        gap: 7px;
+    }
+}
